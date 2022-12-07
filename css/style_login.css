@@ -1,0 +1,95 @@
+body{
+    height: 100vh;
+    background-image: url(../img/background2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    backdrop-filter: blur(5px);
+}
+
+.logo_cabecario{
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+.riot_logo{
+    padding-left: 45px;
+    width: 190px;
+    fill: #fff;
+}
+
+/*Layout do formulário*/
+form{
+    display: flex;
+    justify-content: center;
+    transform: translateY(12vh);
+}
+.content{
+    display: flex;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2020205b;
+    border-radius: 5px;
+    padding: 60px 40px 30px 40px;
+}
+h1{ 
+    font-family: "FF Mark WO5", sans-serif;
+    padding-bottom: 60px;
+    color:  #d3ab5c;
+   
+}
+.campo{
+    margin-top: 15px;
+     
+}
+
+::placeholder{
+    color: #fff;
+}
+.nick, .password_input{
+    font-size: 18px;
+    color: #fff;
+    text-align: start;
+    letter-spacing: 1px;
+    width: 410px;
+    height: 60px;
+    border: 2px solid #d3ab5c;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+    padding-left: 10px;
+    padding-top: 30px;
+    background-color: rgba(238, 238, 238, 0);
+}
+
+.check{
+    position: relative;
+    right: 150px;
+    color: #fff;
+    accent-color: #d3ab5c;
+}
+
+.login_button{
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+
+.login_submit {
+    font-size: 18px;
+    font-family: "FF Mark WO5", sans-serif;
+    height: 60px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2b2b2d;
+    color: #fff;
+    cursor: pointer;
+}
+.login_submit:hover{
+    background-color: #262629;
+    filter: drop-shadow(7px 7px 5px rgba(0, 0, 0, 0.7));
+}
+a{
+    color: #fff;
+}
