@@ -256,6 +256,4 @@ console.log(indice, index)
 // window.location = "page/loading.html"
 
 // [ ] criar um função para análisar o formulário e returna algo, 
-// [ ] criar uma nova page que será postério ao efetuar login
-// [ ] criar arrow down nessa page
 

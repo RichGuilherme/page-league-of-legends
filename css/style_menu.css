@@ -4,17 +4,18 @@
 }
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .conteiner_video video{
-
     position: absolute;
     z-index: -1;
-    filter: brightness(35%);
- 
+    filter: brightness(70%);
 }
 
 header{
+    position: fixed;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,8 +25,8 @@ header{
     border-right-style: none;
     border-left-style: none;
     border-top-style: none;
-    background-color: rgba(0, 0, 0, 0.4);
-    
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
 }
 
 /*Parte de navegação*/
@@ -39,47 +40,77 @@ header{
     width: 190px;
     fill: #fff;
 }
-.container_nav{
+
+nav{
     display: inline-flex;
-    padding-left: 20px;
-    
+    padding-left: 15px;
 }
 
-.flexbox-nav{
-    margin-left: 50px;
-    margin-right: 70px;
+nav ul {
+   float: left;
+   display: flex;
+   justify-content: space-between;
+   width: 600px;
 }
-
-.flexbox-nav ul{
+nav ul ul{
     float: left;
-    
-}
+    display: flex;
+    justify-content: space-between;
+    width: 560px;
+ }
 
-.flexbox-nav ul li{
+nav ul li {
     float: left;
+    position: relative;
     list-style: none;
-    position: relative;
 }
-.flexbox-nav  ul  li  a {
-    display: none;
-    color: #fff;
-    font-size: 20px;
-    padding: 24px 14px;
-}
-.flexbox-nav ul li ul{
+
+nav ul li a {
     display: block;
-    position: absolute;
-    padding: 10px;
+    color: #fff;
+    font-size: 17px;
+    padding: 18px 14px;
 }
-.flexbox-nav ul li:hover ul{
+
+nav ul li ul {
+   display: none;
+   position: absolute;
+   background-color: #333;
+   border: 4px solid #0bc4e2;
+   border-right-style: none;
+   border-left-style: none;
+   border-top-style: none;
+   padding: 10px;
+  
+}
+nav ul li:hover ul {
     display: block;
 }
 
-.social{
-    position: relative;
-    top: 22px;
+nav ul li ul li{
+    width: 180px;
 }
-.nav{
+
+nav ul li ul li a{
+    padding: 13px 35px;
+}
+nav ul li ul li a:hover{
+    background-color: rgb(78, 78, 78);
+    border-radius: 6px;
+}
+
+.arrowDown{
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    height: 0.4em;
+    width: 0.4em;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    transform: rotate(45deg);
+}
+
+.nav {
     padding: 5px 20px 5px 20px;
     color: #fff;
     font-size: 22px;
@@ -87,11 +118,10 @@ header{
     cursor: pointer;
 }
 
-
 .nav:after {
     display: block;
     content: '';
-    border-bottom: solid 1px#0bc4e2;
+    border-bottom: solid 2px#0bc4e2;
     clear: both;
     padding-bottom: 1%;
     transform: scaleX(0);
@@ -115,7 +145,10 @@ header{
    margin-right: 30px;   
    padding: 5px 2px;
 }
-
+.cadastrar:hover{
+   border: 1px solid rgb(182, 182, 182);
+   
+}
 
 .login{
     border-radius: 7px;
@@ -140,7 +173,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 14px;
+    height: 100vh;
 }
 
 .logo_league{
@@ -196,20 +229,20 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
 .container_separador{
     position: relative;
     margin-top: 340px;
-    margin-bottom: 71px;
-    height: 40px;
+    height: 26px;
     z-index: 999;
 } 
 
 
 /* parte de noticias*/
 .container_noticia{
-    height: 50vh;
+    height: 60vh;
     background-color: rgb(0, 0, 0);
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 .container_noticia::before{
     content: '';
@@ -218,7 +251,7 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
     width: 100%;
     height: 100px;
     background: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
-    z-index: 1000;
+    z-index: 999;
 }
 
 .title_noticias p{
@@ -232,7 +265,6 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
 .flexbox-container-noticia{
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
     margin-left: 210px;
 }
 
@@ -259,7 +291,6 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
     top: 0;
     left: 0;
     display: block;
-    width: 100px;
     height: 100%;
     z-index: 2;
     transition: 0.5s all;
@@ -284,6 +315,7 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
     position: relative;
     z-index: 3;
     color: #fff;
+    text-shadow: 1px 1px 2px #333;
     opacity: 0;
     transform: translate(30px);
     transition: 0.5s all;
@@ -295,42 +327,52 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
     transform: translate(0px);
 }
 
-.container-item.noticia_item h1{
-    margin: 0;
+.noticia_item h1{
+    margin-bottom: 2px;
 }
 
-.container-item.noticia_item p{
+.noticia_item p:nth-child(1){
     letter-spacing: 1px;
-    font-size: 15px;
-    margin-top: 8px;
-    margin-bottom: 20px;
+    color: yellow;
+    margin-bottom: 2px;
 }
 
 /* parte de campeao */
 .container_campeoes{
     position: relative;
-    height: 103vh;
+    height: 117vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.911)), url(../img/background3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat;
-    overflow-x: hidden
+    overflow: hidden
 }
 
+.container_campeoes::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+    z-index: 999;
+}
 
 .title_campeao, .text_item{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 90px;
     color: #fff;
 }
+
+
 .title_campeao p{
-    font-size: 60px;
+    font-size: 55px;
     letter-spacing: 2px;
     font-weight: bold;
-   
 }
+
 .text_item p{
     font-size: 19px;
     letter-spacing: 1px;
@@ -394,7 +436,7 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
 
 .descricao_campeao{
     opacity: 0;
-    width:  460px;
+    width:  268px;
 }
 
 .card_img .descricao_campeao:hover{
@@ -413,10 +455,12 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
     margin-bottom: 8px;
     font-weight: 300;
 }
+
+
 /* botão mais campões */
 .input_maisCampeoes{
     position: relative;
-    left: 155vh;
+    left: 158vh;
     top: 20px;
 }
 
@@ -425,57 +469,201 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
     background-color: #d0a85c;
     border: none;
     color: #fff;
+    transition: linear 0.2s;
 }
 
 .input_maisCampeoes a:hover{
     background-color: #e0b667;
-    
+    outline: solid 0.1em rgba(255, 255, 255, 0.7);
+    outline-offset: 0.4em;
 }
+
 /* botões avança e voltar imagens*/
 #button_back{
     position: relative;
     top: 60px;
     height: 1.6em;
     width: 1.6em;
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-right: 0.13em solid #fff;
+    border-bottom: 0.13em solid #fff;
     transform: rotate(135deg);
     cursor: pointer;
 }
 
+#button_back:hover{  
+    height: 1.6em;
+    width: 1.6em;
+    border-right: 0.2em solid rgb(218, 218, 218);
+    border-bottom: 0.2em solid rgb(218, 218, 218);
+}
 
 #button_avance{
     position: relative;
     top: 60px;
     height: 1.6em;
     width: 1.6em;
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-right: 0.13em solid #fff;
+    border-bottom: 0.13em solid #fff;
     transform: rotate(310deg);
     cursor: pointer;
 }
 
-#button_avance:hover{
+#button_avance:hover{  
+    height: 1.6em;
+    width: 1.6em;
+    border-right: 0.2em solid rgb(218, 218, 218);
+    border-bottom: 0.2em solid rgb(218, 218, 218);
+}
+
+/* conteiner skin*/
+
+.conteiner_skin {
+    height: 106vh;
+    padding-top: 100px;
+}
+
+.paisagemPng{
+    position: absolute;
+    width: 100%;
+    height: 106vh;
+}
+
+.paisagemPng::before, .paisagemPng::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+
+}
+.paisagemPng::after{
+    height: 50%;
+    background: linear-gradient(transparent 0%, rgb(0, 0, 0) 30%);
+}
+
+.conteiner_skin img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*Conteiner mapa/destaques*/
+
+.conteiner_mapa{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    padding-top: 170px;
+    padding-bottom: 100px;
+}
+.map{
+    display: inline-flex;
+    align-items: center;
+}
+
+.map p {
+    display: inline;
+    font-size: 19px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    transform: rotate(270deg);
+    color: #fff;
+}
+.map img {
+    width: 1170px;
+    height: 860px;
+}
+
+.conteiner_mapa_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    margin-top: 260px;
+}
+.conteiner_mapa_text p {
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-align: center
+}
+
+.conteiner_mapa_text p:nth-child(1) {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.conteiner_mapa_text p:nth-child(2){
+    font-size: 65px;
+    font-weight: bold;
     
-    height: 1.8em;
-    width: 1.8em;
-    border-right: 2px solid rgb(218, 218, 218);
-    border-bottom: 2px solid rgb(218, 218, 218);
+}
+
+.conteiner_mapa_text p:nth-child(3){
+    margin-bottom: 45px
+}
+
+.button_jogar2 button {
+    height: 50px;
+    width: 180px;
+    padding: 4px 6px;
+    background-color: #0db4ce;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+
+.button_jogar2 button:hover {
+
+
+    outline: 1px solid rgba(255, 255, 255, 0.7);
+    outline-offset: 0.4em;
+    background-color: #0bc4e2;
 }
 
 
 
+/*Footer*/
 
 
+footer {
+    background-color: #333;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 10px
+}
 
+.sobre{
+    color: #fff;
+}
+.sobre p {
+    margin-top: 8px;
+    text-transform: lowercase;
+}
 
+.copyright {
+    color: #ffffff80;
+    margin-top: 7px;
+}
+.riot_logo2 {
+    width: 120px;
+    fill: #ffffff80;
+}
 
-
-
-
-
-
-
+.footer_logo_riot {
+    margin-top: 15px;
+    padding-top: 30px;
+    border: 2px solid #ffffff80;
+    border-bottom-style: none;
+    border-right-style: none;
+    border-left-style: none;
+}
 
 
 
