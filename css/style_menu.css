@@ -228,8 +228,8 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
 
 .container_separador{
     position: relative;
-    margin-top: 340px;
-    height: 26px;
+    margin-top: 333px;
+    height: 19px;
     z-index: 999;
 } 
 
@@ -237,21 +237,12 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
 /* parte de noticias*/
 .container_noticia{
     height: 60vh;
-    background-color: rgb(0, 0, 0);
     position: relative;
+    background: url("/img/background3.png");
     display: flex;
     flex-direction: row;
     align-items: center;
 
-}
-.container_noticia::before{
-    content: '';
-    position: absolute;
-    bottom: -100px;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
-    z-index: 999;
 }
 
 .title_noticias p{
@@ -259,13 +250,12 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
     letter-spacing: 2px;
     margin-left: 22px;
     transform: rotate(270deg);
-    color: #fff;
 }
 
 .flexbox-container-noticia{
     display: flex;
     justify-content: space-around;
-    margin-left: 210px;
+    margin-left: 187px;
 }
 
 .container-item{
@@ -337,33 +327,18 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
     margin-bottom: 2px;
 }
 
+
 /* parte de campeao */
 .container_campeoes{
     position: relative;
-    height: 117vh;
+    height: 125vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.911)), url(../img/background3.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat:no-repeat;
     overflow: hidden
-}
-
-.container_campeoes::before{
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
-    z-index: 999;
 }
 
 .title_campeao, .text_item{
     display: flex;
     justify-content: center;
-    margin-top: 90px;
-    color: #fff;
 }
 
 
@@ -371,12 +346,15 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
     font-size: 55px;
     letter-spacing: 2px;
     font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 80px;
 }
 
 .text_item p{
     font-size: 19px;
     letter-spacing: 1px;
-    
+    margin-top: 30px;
+    margin-bottom: 30px;
 } 
 
 .logo_class img{
@@ -386,10 +364,6 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
     width: 70px;
     
 }
-.logo_class h2{
-    color: #fff;
-}
-
 
 .flexbox-container-campeoes{
     display: flex;
@@ -474,7 +448,7 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
 
 .input_maisCampeoes a:hover{
     background-color: #e0b667;
-    outline: solid 0.1em rgba(255, 255, 255, 0.7);
+    outline: solid 0.1em #111;
     outline-offset: 0.4em;
 }
 
@@ -484,8 +458,8 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
     top: 60px;
     height: 1.6em;
     width: 1.6em;
-    border-right: 0.13em solid #fff;
-    border-bottom: 0.13em solid #fff;
+    border-right: 0.13em solid #111;
+    border-bottom: 0.13em solid #111;
     transform: rotate(135deg);
     cursor: pointer;
 }
@@ -493,8 +467,8 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
 #button_back:hover{  
     height: 1.6em;
     width: 1.6em;
-    border-right: 0.2em solid rgb(218, 218, 218);
-    border-bottom: 0.2em solid rgb(218, 218, 218);
+    border-right: 0.2em solid rgb(170, 170, 170);
+    border-bottom: 0.2em solid rgb(170, 170, 170);
 }
 
 #button_avance{
@@ -502,8 +476,8 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
     top: 60px;
     height: 1.6em;
     width: 1.6em;
-    border-right: 0.13em solid #fff;
-    border-bottom: 0.13em solid #fff;
+    border-right: 0.13em solid #111;
+    border-bottom: 0.13em solid #111;
     transform: rotate(310deg);
     cursor: pointer;
 }
@@ -511,23 +485,40 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
 #button_avance:hover{  
     height: 1.6em;
     width: 1.6em;
-    border-right: 0.2em solid rgb(218, 218, 218);
-    border-bottom: 0.2em solid rgb(218, 218, 218);
+    border-right: 0.2em solid rgb(170, 170, 170);
+    border-bottom: 0.2em solid rgb(170, 170, 170);
 }
 
-/* conteiner skin*/
+/* conteiner campeao parte video*/
 
-.conteiner_skin {
+.container_video {
     height: 106vh;
-    padding-top: 100px;
+    padding-top: 200px;
+    background-color: #d1f7ff;
+}
+.container_video::before{
+    content: '';
+    position: absolute;
+    top: 275vh;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #d1f7ff,  transparent);
+    z-index: 999;
+}
+
+.paisagemPng img{
+    position: absolute;
+    width: 100%;
+    height: 119vh;
+    object-fit: cover;
 }
 
 .paisagemPng{
     position: absolute;
     width: 100%;
     height: 106vh;
+    margin-top: 110px;
 }
-
 .paisagemPng::before, .paisagemPng::after{
     content: "";
     position: absolute;
@@ -541,22 +532,63 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
     background: linear-gradient(transparent 0%, rgb(0, 0, 0) 30%);
 }
 
-.conteiner_skin img {
+.bolaPng{
     position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    margin-top: 120px;
 }
+
+#videDivider{
+    height: 500px;
+    filter: brightness(96%);
+    z-index: 100;
+}
+
+.classBotao{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 170px;
+}
+
+.videoClass{
+    position: absolute;
+    bottom: 258px;
+    margin-left: 190px;
+}
+
+.buttonClass{
+    margin-right: 27px;
+    border: 2px solid;
+    border-radius: 50% 50%;
+    background-color: #00000000;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.buttonClass:hover{
+    opacity: 1;
+}
+
+.buttonClass svg{
+    height: 60px;
+    width: 60px;
+    margin: 8px;
+}
+
 
 
 /*Conteiner mapa/destaques*/
 
 .conteiner_mapa{
     display: flex;
+    position: relative;
     background-color: rgb(0, 0, 0);
-    padding-top: 170px;
+    height: 150vh;
+    margin-top: 200px;
+    padding-top: 280px;
     padding-bottom: 100px;
 }
+
 .map{
     display: inline-flex;
     align-items: center;
@@ -573,6 +605,20 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
 .map img {
     width: 1170px;
     height: 860px;
+    transform: translateY(0px);
+    animation: flutuar 5s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 .conteiner_mapa_text {
@@ -583,7 +629,7 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
     position: absolute;
     right: 0;
     margin-right: 40px;
-    margin-top: 260px;
+    margin-top: 360px;
 }
 .conteiner_mapa_text p {
     color: #fff;
@@ -601,6 +647,7 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
 .conteiner_mapa_text p:nth-child(2){
     font-size: 65px;
     font-weight: bold;
+    text-transform: uppercase;
     
 }
 

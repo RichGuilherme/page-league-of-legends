@@ -13,7 +13,7 @@ const tanques = ["Darius", "Braum", "Alistar", "Leona", "Aatrox"]
 let index = 1
 function buttonProxImagem () {
 
-console.log(index)
+
 switch(index){
     case 0:
         index++
@@ -121,7 +121,7 @@ if(index == 1){
     index--
 }
 
-console.log(indice, index)
+
 
     switch(indice){
         case 0:
