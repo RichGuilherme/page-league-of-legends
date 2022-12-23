@@ -62,8 +62,8 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
 
 .container_separador{
     position: relative;
-    margin-top: 333px;
-    height: 19px;
+    margin-top: 360px;
+    height: 0px;
     z-index: 999;
 } 
 
