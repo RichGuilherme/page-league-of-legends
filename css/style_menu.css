@@ -20,6 +20,7 @@ html{
 .conteiner_video video{
     position: absolute;
     z-index: -1;
+    height: 100vh;
     filter: brightness(70%);
 }
 
