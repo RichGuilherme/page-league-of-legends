@@ -9,16 +9,16 @@
 
 @font-face {
     font-family: "beaufortforlol";
-    src: url("/font/beaufortforlol-heavy.otf") format("OpenType");
+    src: url("font/beaufortforlol-heavy.otf") format("OpenType");
 }
 @font-face {
     font-family: "arialN";
-    src: url("/font/ARIALNB.TTF") format("trueType");
+    src: url("font/ARIALNB.TTF") format("trueType");
 }
 
 @font-face {
     font-family: "mark";
-    src: url("/font/FontFont_FF.Mark.Pro.Medium.otf") format("OpenType");
+    src: url("font/FontFont_FF.Mark.Pro.Medium.otf") format("OpenType");
 }
 
 html{
