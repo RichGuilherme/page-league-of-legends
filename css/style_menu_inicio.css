@@ -5,11 +5,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.logo_league{
-    margin-top: 20px;
+    height: 84vh;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .container_destaques img#logo_league{
@@ -18,7 +16,7 @@
 }
 
 .button_jogar{
-    margin-top: 20px;
+    margin-top: 35px;
     margin-bottom: 75px;
 }
 
@@ -27,12 +25,13 @@
     height: 52px;
     border: none;
     border-radius: 1000px;
-    background-color: #0bc4e2;
-    box-shadow: 9px 10px 24px #0bc5e2c2;
+    background: linear-gradient(90deg, rgba(11, 198, 227,1) 0%, rgb(60, 183, 170) 100%);
+    color: #fff;
+    box-shadow: 3px 3px 20px #0bc5e2c2;
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     outline: none;
-    font-size: 17px;
+    font-size:  1.0625em;
     font-family: "arialN";
     padding: 10px;
 }
@@ -49,7 +48,6 @@ button#button_jogar.button::before {
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: all .3s ease-in-out 0s;
-    cursor: none;
 }
 .button:hover, .button:focus {
     transform: translateY(-6px);
@@ -59,11 +57,32 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
     opacity: 1;
  }
 
-
-.container_separador{
+ .dividerSection{
     position: relative;
-    margin-top: 360px;
-    height: 0px;
-    z-index: 999;
+    height: 6px;
+    box-shadow: 0 5.5px 0 black;
+    border-width: 0;
+    z-index: 10;
+ }
+
+
+@media (max-width : 1417px){
+    .container_destaques, .dividerSection{
+        max-width: 1417px;
+        min-width: 1417px;
+    }
+}
+
+@media (max-width : 995px){
+    .container_destaques button#button_joga{
+        display: none;
+    }
 } 
 
+@media (max-width: 558px){
+    .container_destaques img#logo_league{
+        height: 280px;
+        width: 600px;
+    }
+
+}
