@@ -422,7 +422,7 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
 .container_noticia{
     height: 60vh;
     position: relative;
-    background: url("/img/background3.png");
+    background: url("/img/fundoNoticia.png");
     display: flex;
     flex-direction: row;
     align-items: center;
