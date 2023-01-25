@@ -1,0 +1,92 @@
+
+/* conteiner campeao parte video*/
+
+.container_video {
+    height: 106vh;
+    padding-top: 200px;
+    background-color: #d1f7ff;
+}
+.container_video::before{
+    content: '';
+    position: absolute;
+    top: 275vh;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #d1f7ff,  transparent);
+    z-index: 999;
+}
+
+.paisagemPng img{
+    position: absolute;
+    width: 100%;
+    height: 119vh;
+    object-fit: cover;
+}
+
+.paisagemPng{
+    position: absolute;
+    width: 100%;
+    height: 106vh;
+    margin-top: 110px;
+}
+.paisagemPng::before, .paisagemPng::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+
+}
+.paisagemPng::after{
+    height: 50%;
+    background: linear-gradient(transparent 0%, rgb(0, 0, 0) 30%);
+}
+
+.bolaPng{
+    position: absolute;
+    margin-top: 120px;
+}
+
+#videoDivider{
+    height: 500px;
+    filter: brightness(96%);
+    z-index: 100;
+}
+
+.classBotao{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 170px;
+}
+
+.videoClass{
+    position: absolute;
+    bottom: 258px;
+    margin-left: 190px;
+}
+
+.class .buttonClass{
+    display: flex;
+    border: 2px solid;
+    border-radius: 50%;
+    background-color:  transparent;
+    opacity: 0.5;
+    cursor: pointer;
+    margin: 17px;
+}
+
+
+.buttonClass svg{
+    height: 60px;
+    width: 60px;
+    margin: 8px;
+}
+
+.class{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 2px;
+}
+

@@ -1,0 +1,161 @@
+/* parte de campeao */
+.container_campeoes{
+    position: relative;
+    height: 125vh;
+    width: 100%;
+    overflow: hidden
+}
+
+.title_campeao, .text_item{
+    display: flex;
+    justify-content: center;
+}
+
+
+.title_campeao p{
+    font-size: 55px;
+    letter-spacing: 1px;
+    font-family: "beaufortforlol", Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 80px;
+}
+
+.text_item p{
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+} 
+
+.logo_class img{
+    display: flex;
+    margin: auto;
+    height: 60px;
+    width: 70px;
+    
+}
+
+.flexbox-container-campeoes{
+    display: flex;
+    align-items: center;
+    height: 600px;
+    margin-top: 90px;
+    margin-left: 130px;
+}
+.container_LogoImg{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-campeoes{
+    height: 460px;
+    width: 270px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    margin: 22px 18px 20px 18px;
+}
+.card_img {
+    display: flex;
+    background-position: -370px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+    border: 1px solid;
+    filter: grayscale(97%);
+    -webkit-filter: grayscale(97%);
+    height: 100%;
+    width: 100%;
+}
+
+.card-campeoes .card_img:hover{
+    filter: none;
+    -webkit-filter: none;
+    transform: scale3d(1.150, 1.100, 1);
+}
+
+
+.descricao_campeao{
+    opacity: 0;
+    width:  268px;
+}
+
+.card_img .descricao_campeao:hover{
+    position: relative;
+    display: flex;
+    opacity: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px 8px 10px 8px;
+    letter-spacing: 1px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 20px;
+    color: #fff;
+}
+.card_img .descricao_campeao h1{
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+/* botão mais campões */
+.input_maisCampeoes{
+    position: relative;
+    left: 158vh;
+    top: 20px;
+}
+
+.input_maisCampeoes a{
+    padding: 9px 18px;
+    background-color: #d0a85c;
+    border: none;
+    color: #fff;
+    transition: linear 0.2s;
+}
+
+.input_maisCampeoes a:hover{
+    background-color: #e0b667;
+    outline: solid 0.1em #111;
+    outline-offset: 0.4em;
+}
+
+/* botões avança e voltar imagens*/
+#button_back{
+    position: relative;
+    top: 60px;
+    height: 1.6em;
+    width: 1.6em;
+    border-right: 0.13em solid #111;
+    border-bottom: 0.13em solid #111;
+    transform: rotate(135deg);
+    cursor: pointer;
+}
+
+#button_back:hover{  
+    height: 1.6em;
+    width: 1.6em;
+    border-right: 0.2em solid rgb(170, 170, 170);
+    border-bottom: 0.2em solid rgb(170, 170, 170);
+}
+
+#button_avance{
+    position: relative;
+    top: 60px;
+    height: 1.6em;
+    width: 1.6em;
+    border-right: 0.13em solid #111;
+    border-bottom: 0.13em solid #111;
+    transform: rotate(310deg);
+    cursor: pointer;
+}
+
+#button_avance:hover{  
+    height: 1.6em;
+    width: 1.6em;
+    border-right: 0.2em solid rgb(170, 170, 170);
+    border-bottom: 0.2em solid rgb(170, 170, 170);
+}

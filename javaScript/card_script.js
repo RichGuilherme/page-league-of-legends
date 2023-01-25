@@ -13,7 +13,7 @@ const tanques = ["Darius", "Braum", "Alistar", "Leona", "Aatrox"]
 let index = 1
 function buttonProxImagem () {
 
-console.log(index)
+
 switch(index){
     case 0:
         index++
@@ -121,7 +121,7 @@ if(index == 1){
     index--
 }
 
-console.log(indice, index)
+
 
     switch(indice){
         case 0:
@@ -256,6 +256,4 @@ console.log(indice, index)
 // window.location = "page/loading.html"
 
 // [ ] criar um função para análisar o formulário e returna algo, 
-// [ ] criar uma nova page que será postério ao efetuar login
-// [ ] criar arrow down nessa page
 
