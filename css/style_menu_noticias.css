@@ -10,7 +10,7 @@
 }
 
 .title_noticias p{
-    font-size: 19px;
+    font-size: 1.390em;
     letter-spacing: 2px;
     margin-left: 22px;
     transform: rotate(270deg);
@@ -91,3 +91,9 @@
     margin-bottom: 2px;
 }
 
+@media (max-width: 1417px){
+    .container_noticia{
+        max-width: 1417px;
+        min-width: 1417px;
+    }
+}

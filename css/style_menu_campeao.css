@@ -1,9 +1,9 @@
 /* parte de campeao */
 .container_campeoes{
     position: relative;
-    height: 125vh;
+    height: 117vh;
     width: 100%;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .title_campeao, .text_item{
@@ -13,7 +13,7 @@
 
 
 .title_campeao p{
-    font-size: 55px;
+    font-size: 3.4375em;
     letter-spacing: 1px;
     font-family: "beaufortforlol", Arial, sans-serif;
     font-weight: bold;
@@ -22,7 +22,7 @@
 }
 
 .text_item p{
-    font-size: 19px;
+    font-size: 1.3975em;
     letter-spacing: 1px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -41,7 +41,8 @@
     align-items: center;
     height: 600px;
     margin-top: 90px;
-    margin-left: 130px;
+    margin-left: 160px;
+    overflow-y: hidden;
 }
 .container_LogoImg{
     display: flex;
@@ -93,7 +94,7 @@
     padding: 0px 8px 10px 8px;
     letter-spacing: 1px;
     text-shadow: black 0.1em 0.1em 0.2em;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #fff;
 }
 .card_img .descricao_campeao h1{
@@ -105,8 +106,9 @@
 /* botão mais campões */
 .input_maisCampeoes{
     position: relative;
-    left: 158vh;
+    right: 200px;
     top: 20px;
+    float: right;
 }
 
 .input_maisCampeoes a{
@@ -127,6 +129,7 @@
 #button_back{
     position: relative;
     top: 60px;
+    margin-left: 6px;
     height: 1.6em;
     width: 1.6em;
     border-right: 0.13em solid #111;
@@ -145,6 +148,7 @@
 #button_avance{
     position: relative;
     top: 60px;
+    margin-right: 30px;
     height: 1.6em;
     width: 1.6em;
     border-right: 0.13em solid #111;
@@ -158,4 +162,21 @@
     width: 1.6em;
     border-right: 0.2em solid rgb(170, 170, 170);
     border-bottom: 0.2em solid rgb(170, 170, 170);
+}
+
+@media (max-width : 1417px){
+    html{
+        display: block;
+    }
+    .container_campeoes{
+        max-width: 1417px;
+        min-width: 1417px;
+        height: 110vh;
+    }
+    
+}
+@media (max-width: 996px){
+    .text_item p {
+        font-size: 1.7875em;
+    }
 }
