@@ -5,6 +5,15 @@
     width: 100%;
     overflow: hidden;
 }
+.container_campeoes::before{ 
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #d1f7ff,  transparent);
+    z-index: 999;
+}
 
 .title_campeao, .text_item{
     display: flex;
@@ -169,11 +178,15 @@
         display: block;
     }
     .container_campeoes{
-        max-width: 1417px;
-        min-width: 1417px;
-        height: 110vh;
+        height: 130vh;
+    }
+    .flexbox-container-campeoes {
+        margin-left: 25px;
     }
     
+    .text_item p {
+        text-align: center;
+    }
 }
 @media (max-width: 996px){
     .text_item p {

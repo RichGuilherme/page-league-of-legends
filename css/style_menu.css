@@ -232,11 +232,10 @@ footer {
         display: block;
     }
     .conteiner_video video {
-        min-width: 1417px;
-        max-width: 1417px;
+       
     }
     footer{
-        min-width: 1410px;
+
     }
 }
 
@@ -252,7 +251,7 @@ footer {
         margin-bottom: 0;
       }
 }
-@media (max-width : 995px){
+@media (max-width : 1137px){
     .container_formulario, .container_nav{
         display: none;
     }

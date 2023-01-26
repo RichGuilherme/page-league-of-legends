@@ -68,8 +68,6 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
 
 @media (max-width : 1417px){
     .container_destaques, .dividerSection{
-        max-width: 1417px;
-        min-width: 1417px;
     }
 }
 
@@ -81,8 +79,8 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
 
 @media (max-width: 558px){
     .container_destaques img#logo_league{
-        height: 280px;
-        width: 600px;
+        height: 100%;
+        width: 100%;
     }
 
 }
