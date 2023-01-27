@@ -145,3 +145,15 @@
     }
 }
 
+@media (max-width: 728px){
+    .conteiner_mapa_text p:nth-child(2){
+        font-size: 3.6625em;
+    }
+}
+
+@media (max-width: 488px){
+    .conteiner_mapa_text p:nth-child(2){
+        font-size: 3.0625em;
+    }
+}
+
