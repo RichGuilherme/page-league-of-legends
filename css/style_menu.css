@@ -42,7 +42,7 @@ header{
     border-left-style: none;
     border-top-style: none;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1000;
+    z-index: 999;
     font-family:  "mark" ,Arial, sans-serif;
 }
 
@@ -56,6 +56,8 @@ header{
     padding-left: 2.8125em;
     width: 190px;
     fill: #fff;
+    position: relative;
+    right: 27px;
 }
 
 .container_nav{
@@ -116,7 +118,10 @@ nav ul li ul li a:hover{
 }
 
 .arrowDown{
-    display: inline-block;
+    display: inline-flex;
+    position: relative;
+    bottom: 19px;
+    left: 55px;
     margin-left: 5px;
     margin-bottom: 2px;
     height: 0.4em;
@@ -185,8 +190,103 @@ nav ul li ul li a:hover{
 }
 
 
-/*Footer*/
 
+/*menu-section*/
+
+#bnt-hamburgueToggle{
+    display: none;
+    font-size: 2.75em;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.menu-section{
+   position: fixed;
+   height: 100vh;
+   width: 53vh;
+   top: 0;
+   right: 0;
+   background-color: #1e1e1e;
+   display: none;
+   flex-direction: column;
+   z-index: 1000;
+}
+.menu-section-background{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: #00000099;
+    z-index: 100;
+    display: none;
+}
+
+.menu-section-topo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+
+#bnt-closeToggle{
+    font-size: 1.976em;
+    color: #fff;
+}
+.container-bnt-closeToggle{
+    background-color: #737272;
+    height: 32px;
+    width: 33px;
+    margin-right: 20px;
+    margin-top: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-section-options{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 50px;
+    
+}
+.menu-section-option {
+    font-size:  1.3858em;
+    margin-top: 30px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.menu-section-option:hover{
+    background-color: #4a4949;
+    width: 97%;
+    padding: 7px;
+    border-radius: 8px;
+}
+
+
+.menu-section-options ul {
+    margin-left: 9px;
+    display: none;
+}
+.menu-section-options ul li{
+    margin-top: 10px;
+}
+.menu-section-options ul li:hover {
+    background-color: #4a4949;
+    width: 95%;
+    padding: 7px 0 7px 0;
+    border-radius: 8px;
+}
+.menu-section-options ul li a{
+    color: #fff;
+}
+
+#arrow_drop_down{
+    color: #fff;
+    margin-left: 8px;
+}
+
+/*Footer*/
 
 footer {
     background-color: #333;
@@ -220,25 +320,6 @@ footer {
     border-right-style: none;
     border-left-style: none;
 }
-#hamburgue{
-    display: none;
-    font-size: 2.75em;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-@media (max-width : 1406px){
-    html{
-        display: block;
-    }
-    .conteiner_video video {
-        min-width: 1417px;
-        max-width: 1417px;
-    }
-    footer{
-        min-width: 1410px;
-    }
-}
 
 @media (max-width : 1261px){
       .campeao, .noticias {
@@ -252,11 +333,11 @@ footer {
         margin-bottom: 0;
       }
 }
-@media (max-width : 995px){
+@media (max-width : 1137px){
     .container_formulario, .container_nav{
         display: none;
     }
-    #hamburgue{
+    #bnt-hamburgueToggle{
         display: block;
     }
     .material-symbols-outlined {
@@ -264,14 +345,18 @@ footer {
     }
 }
 
-@media (max-width: 568px){
 
+@media (max-width: 580px){
     .container_nav{
         display: none;
     }
 
     .container_formulario{
         display: none;
+    }
+
+    .menu-section{
+        width: 100%;
     }
 }
 

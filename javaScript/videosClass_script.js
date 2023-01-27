@@ -34,7 +34,7 @@ setInterval(()=> {
     }
 
 
-    videoClass.src = `/videos/video${classes[indice]}.mp4`
+    videoClass.src = `videos/video${classes[indice]}.mp4`
 
 
 }, 6000)
@@ -43,7 +43,7 @@ setInterval(()=> {
 
 function videoMago() {
     setTimeout(() => {
-        videoClass.src =  "/videos/videoMagos.mp4"
+        videoClass.src =  "videos/videoMagos.mp4"
 
         buttonClass[indice].style.opacity = "0.5"
         indice = 0
@@ -53,7 +53,7 @@ function videoMago() {
 
 function videoLutador() {
     setTimeout(() => {
-        videoClass.src =  "/videos/videoLutadores.mp4"
+        videoClass.src =  "videos/videoLutadores.mp4"
 
         
         buttonClass[indice].style.opacity = "0.5"
@@ -64,7 +64,7 @@ function videoLutador() {
 
 function videoAssassino() {
     setTimeout(() => {
-        videoClass.src =  "/videos/videoAssassinos.mp4"
+        videoClass.src =  "videos/videoAssassinos.mp4"
 
         buttonClass[indice].style.opacity = "0.5"
         indice = 2
@@ -74,7 +74,7 @@ function videoAssassino() {
 
 function videoAtirador() {
     setTimeout(() => {
-        videoClass.src =  "/videos/videoAtiradores.mp4"
+        videoClass.src =  "videos/videoAtiradores.mp4"
 
         buttonClass[indice].style.opacity = "0.5"
         indice = 3
@@ -84,7 +84,7 @@ function videoAtirador() {
 
 function videoTanque() {
     setTimeout(() => {
-        videoClass.src =  "/videos/videoTank.mp4"
+        videoClass.src =  "videos/videoTank.mp4"
         
         buttonClass[indice].style.opacity = "0.5"
         indice = 4

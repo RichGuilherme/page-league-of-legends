@@ -253,7 +253,3 @@ if(index == 1){
 
 
 
-// window.location = "page/loading.html"
-
-// [ ] criar um função para análisar o formulário e returna algo, 
-
