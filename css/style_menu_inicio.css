@@ -1,6 +1,6 @@
 /*parte de inicio*/
 
-.container_destaques{
+.container-destaques{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,17 +10,17 @@
     margin: 0 auto;
 }
 
-.container_destaques img#logo_league{
+.container-destaques img#logo-league{
     height: 249px;
     width: 540px;
 }
 
-.button_jogar{
+.button-jogar{
     margin-top: 35px;
     margin-bottom: 75px;
 }
 
-.container_destaques button#button_jogar{
+.container-destaques button#button-jogar{
     width: 205px;
     height: 52px;
     border: none;
@@ -35,7 +35,7 @@
     font-family: "arialN";
     padding: 10px;
 }
-button#button_jogar.button::before {
+button#button-jogar.button::before {
     content: '';
     border-radius: 1000px;
     min-width: calc(205px + 10px);
@@ -53,7 +53,7 @@ button#button_jogar.button::before {
     transform: translateY(-6px);
   }
   
-button#button_jogar.button:hover::before, button#button_jogar.button:focus::before {
+button#button-jogar.button:hover::before, button#button-jogar.button:focus::before {
     opacity: 1;
  }
 
@@ -66,13 +66,13 @@ button#button_jogar.button:hover::before, button#button_jogar.button:focus::befo
  }
 
 @media (max-width : 995px){
-    .container_destaques button#button_joga{
+    .container-destaques button#button_joga{
         display: none;
     }
 } 
 
 @media (max-width: 558px){
-    .container_destaques img#logo_league{
+    .container-destaques img#logo-league{
         height: 100%;
         width: 100%;
     }

@@ -79,7 +79,7 @@
     font-size: 1.329em;
 }
 
-.button_jogar2 button {
+.button-jogar2 button {
     height: 50px;
     width: 180px;
     padding: 4px 6px;
@@ -91,7 +91,7 @@
     transition: linear 0.2s;
 }
 
-.button_jogar2 button:hover {
+.button-jogar2 button:hover {
     outline: 1px solid rgba(255, 255, 255, 0.7);
     outline-offset: 0.4em;
     background-color: #0bc4e2;

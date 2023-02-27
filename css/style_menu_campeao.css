@@ -44,6 +44,9 @@
     width: 70px;
     
 }
+.logo_class h2 {
+    color: #d0a85c;
+}
 
 .flexbox-container-campeoes{
     display: flex;
@@ -75,11 +78,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.5s all;
-    border: 1px solid;
+    border: 2px #d0a85c groove;
+    border-radius: 3px;
     filter: grayscale(97%);
     -webkit-filter: grayscale(97%);
     height: 100%;
     width: 100%;
+
 }
 
 .card-campeoes .card_img:hover{
@@ -178,6 +183,13 @@
         right: 10px;
     }
 }
+@media (max-height : 945px){
+    .container_campeoes{
+        height: 135vh;
+        margin: 0 auto;
+    }
+}
+
 
 @media (max-width : 1417px){
     html{
