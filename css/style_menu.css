@@ -116,9 +116,11 @@ nav ul li ul li a:hover{
 }
 
 .arrowDown{
-    display: inline-block;
+    display: inline-flex;
+    position: relative;
+    bottom: 21px;
+    left: 53px;
     margin-left: 5px;
-    margin-bottom: 2px;
     height: 0.4em;
     width: 0.4em;
     border-right: 2px solid rgba(255, 255, 255, 0.5);
