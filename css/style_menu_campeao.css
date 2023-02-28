@@ -183,20 +183,10 @@
         right: 10px;
     }
 }
-@media (max-height : 945px){
-    .container_campeoes{
-        height: 135vh;
-        margin: 0 auto;
-    }
-}
-
 
 @media (max-width : 1417px){
     html{
         display: block;
-    }
-    .container_campeoes{
-        height: 130vh;
     }
     .flexbox-container-campeoes {
         margin-left: 25px;
@@ -206,11 +196,30 @@
         text-align: center;
     }
 }
-@media (max-width: 996px){
-    .text_item p {
-        font-size: 1.5875em;
+.text_item p {
+    font-size: 1.5875em;
+}
+@media (max-height : 945px){
+    .container_campeoes{
+        height: 135vh;
+        margin: 0 auto;
     }
 }
+
+@media (max-height: 768px){
+    .container_campeoes{
+        height: 151vh;
+        margin: 0 auto;
+    }
+}
+
+@media (max-height: 680px){
+    .container_campeoes{
+        height: 180vh;
+        margin: 0 auto;
+    }
+}
+
 
 @media (max-width: 624px){
     .text_item p {

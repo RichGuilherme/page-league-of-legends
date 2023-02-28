@@ -94,7 +94,9 @@
     .container_noticia{
          flex-direction: column;
          justify-content: center;
-         overflow: scroll;
+         overflow-x: scroll;
+         overflow-y: hidden;
+     
     }
     .flexbox-container-noticia{
          margin-left: 0;
@@ -102,7 +104,7 @@
 
     .title_noticias p {
         transform: none;
-        margin-left: 43px;
+        margin-top: 40px;
     }
 }
 

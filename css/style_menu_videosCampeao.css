@@ -116,7 +116,15 @@
        top: 283px
      }
 }
-@media (max-width : 1021px){
+
+
+@media (max-height: 1024px) {
+    .paisagemPng img{
+        height: 105vh;
+    }
+}
+
+@media (max-width : 1024px){
      #videoDivider{
         width: 0px;
      }
