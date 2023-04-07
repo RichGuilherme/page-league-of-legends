@@ -26,14 +26,21 @@
 .container-item{
     width: 280px;
     height: 360px;
+
     padding: 2rem 1rem;
+
     position: relative;
+
     display: flex;
     align-items: flex-end;
-    background-color: #fff;
-    margin: 40px;  
-    transition: 0.5s ease-in-out;
+
     border-radius: 8px;
+
+    background-color: #fff;
+
+    margin: 40px;  
+
+    transition: 0.5s ease-in-out;
 }
 
 .container-item:hover{
@@ -45,6 +52,7 @@
     position: absolute;
     top: 0;
     left: 0;
+
     display: block;
     height: 100%;
     z-index: 2;
@@ -59,9 +67,12 @@
 .container-item img{
     height: 100%;
     width: 100%;
+
     object-fit: cover;
-    position: absolute;
+
     border-radius: 8px;
+
+    position: absolute;
     top: 0;
     left: 0;
 }

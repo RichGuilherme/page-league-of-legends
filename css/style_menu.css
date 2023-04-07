@@ -6,7 +6,7 @@
 @import 'style_menu/style_menu_mapa.css';
 @import 'style_menu/style_menu_footer.css';
 
-body{
+html{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }

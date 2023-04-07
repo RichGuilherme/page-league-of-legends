@@ -1,6 +1,6 @@
 const videoClass = document.querySelector("#videoClass")
-const buttonClass = document.querySelectorAll(`button.button-Class:nth-child(n)`)
-
+const buttonClass = document.querySelectorAll(".button-Class")
+const bntLogoClass = document.querySelectorAll(".bnt-logo-class")
 
 
 const classes = ["Magos", "Lutadores", "Assassinos","Atiradores", "Tank"]
@@ -21,16 +21,24 @@ setInterval(()=> {
     
 
     buttonClass[indice].style.opacity = "1"
+    bntLogoClass[indice].style.opacity = "1"
 
     if(indice === 4){
 
         buttonClass[4].style.opacity = "1"
         buttonClass[indice-1].style.opacity = "0.3"
 
+        bntLogoClass[4].style.opacity = "1"
+        bntLogoClass[indice-1].style.opacity = "0.3"
+
+
     }else if(indice ==! 4) {
         buttonClass[4].style.opacity = "0.3"
+        bntLogoClass[4].style.opacity = "0.3"
     }else{
         buttonClass[indice-1].style.opacity = "0.3"
+        bntLogoClass[indice-1].style.opacity = "0.3"
+
     }
 
 
@@ -46,8 +54,10 @@ function videoMago() {
         videoClass.src =  "videos/videoMagos.mp4"
 
         buttonClass[indice].style.opacity = "0.3"
+        bntLogoClass[indice].style.opacity = "0.3"
         indice = 0
         buttonClass[indice].style.opacity = "1"
+        bntLogoClass[indice].style.opacity = "1"
     }, 200)
 }
 
@@ -57,8 +67,10 @@ function videoLutador() {
 
         
         buttonClass[indice].style.opacity = "0.3"
+        bntLogoClass[indice].style.opacity = "0.3"
         indice = 1
         buttonClass[indice].style.opacity = "1"
+        bntLogoClass[indice].style.opacity = "1"
     }, 200)
 }
 
@@ -67,8 +79,10 @@ function videoAssassino() {
         videoClass.src =  "videos/videoAssassinos.mp4"
 
         buttonClass[indice].style.opacity = "0.3"
+        bntLogoClass[indice].style.opacity = "0.3"
         indice = 2
         buttonClass[indice].style.opacity = "1"
+        bntLogoClass[indice].style.opacity = "1"
     }, 200)
 }
 
@@ -77,8 +91,10 @@ function videoAtirador() {
         videoClass.src =  "videos/videoAtiradores.mp4"
 
         buttonClass[indice].style.opacity = "0.3"
+        bntLogoClass[indice].style.opacity = "0.3"
         indice = 3
         buttonClass[indice].style.opacity = "1"
+        bntLogoClass[indice].style.opacity = "1"
     }, 200)
 }
 
@@ -87,8 +103,10 @@ function videoTanque() {
         videoClass.src =  "videos/videoTank.mp4"
         
         buttonClass[indice].style.opacity = "0.3"
+        bntLogoClass[indice].style.opacity = "0.3"
         indice = 4
         buttonClass[indice].style.opacity = "1"
+        bntLogoClass[indice].style.opacity = "1"
     }, 200)
 }
 

@@ -14,6 +14,7 @@
 .map{
     display: inline-flex;
     align-items: center;
+    
     margin-top: 100px
 }
 
@@ -40,6 +41,7 @@
     0%{
         transform: translateY(0px);
     }
+    
     50%{
         transform: translateY(-30px);
     }
@@ -53,22 +55,26 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
     position: absolute;
     right: 0;
+
     margin-right: 40px;
     margin-top: 320px;
 }
 .conteiner_mapa_text p {
-    color: #fff;
     letter-spacing: 1px;
     margin-bottom: 15px;
-    text-align: center
+    text-align: center;
+
+    color: #fff;
 }
 
 .conteiner_mapa_text p:nth-child(1) {
     font-size: 1.5625em;
     font-weight: bold;
     font-family: "beaufortforlol", Arial, sans-serif;
+
     color: #fff;
 }
 
@@ -82,24 +88,30 @@
 
 .conteiner_mapa_text p:nth-child(3){
     margin-bottom: 45px;
+
     font-size: 1.329em;
 }
 
 .button-jogar2 button {
     height: 50px;
     width: 180px;
+
     padding: 4px 6px;
+
     background-color: #0db4ce;
     font-size: 1.125em;
     font-family: "arialN", Arial, sans-serif;
     border: none;
+
     cursor: pointer;
+
     transition: linear 0.2s;
 }
 
 .button-jogar2 button:hover {
     outline: 1px solid rgba(255, 255, 255, 0.7);
     outline-offset: 0.4em;
+
     background-color: #0bc4e2;
 }
 
