@@ -17,5 +17,3 @@ document.querySelector(".login_submit").onclick = function () {
       }
     
     }
-
-    // [ ] desativar o botão de login enquanto não fazer o formulário

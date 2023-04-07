@@ -1,0 +1,35 @@
+/*Footer*/
+
+footer {
+    position: relative;
+    background-color: #333;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 10px
+}
+
+.sobre{
+    color: #fff;
+}
+.sobre p {
+    margin-top: 8px;
+    text-transform: lowercase;
+}
+
+.copyright {
+    color: #ffffff80;
+    margin-top: 7px;
+}
+.riot_logo2 {
+    width: 120px;
+    fill: #ffffff80;
+}
+
+.footer_logo_riot {
+    margin-top: 15px;
+    padding-top: 30px;
+    border: 2px solid #ffffff80;
+    border-bottom-style: none;
+    border-right-style: none;
+    border-left-style: none;
+}

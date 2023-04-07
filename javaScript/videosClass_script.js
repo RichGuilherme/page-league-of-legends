@@ -1,5 +1,5 @@
 const videoClass = document.querySelector("#videoClass")
-const buttonClass = document.querySelectorAll(`button.buttonClass:nth-child(n)`)
+const buttonClass = document.querySelectorAll(`button.button-Class:nth-child(n)`)
 
 
 
@@ -25,12 +25,12 @@ setInterval(()=> {
     if(indice === 4){
 
         buttonClass[4].style.opacity = "1"
-        buttonClass[indice-1].style.opacity = "0.5"
+        buttonClass[indice-1].style.opacity = "0.3"
 
     }else if(indice ==! 4) {
-        buttonClass[4].style.opacity = "0.5"
+        buttonClass[4].style.opacity = "0.3"
     }else{
-        buttonClass[indice-1].style.opacity = "0.5"
+        buttonClass[indice-1].style.opacity = "0.3"
     }
 
 
@@ -45,7 +45,7 @@ function videoMago() {
     setTimeout(() => {
         videoClass.src =  "videos/videoMagos.mp4"
 
-        buttonClass[indice].style.opacity = "0.5"
+        buttonClass[indice].style.opacity = "0.3"
         indice = 0
         buttonClass[indice].style.opacity = "1"
     }, 200)
@@ -56,7 +56,7 @@ function videoLutador() {
         videoClass.src =  "videos/videoLutadores.mp4"
 
         
-        buttonClass[indice].style.opacity = "0.5"
+        buttonClass[indice].style.opacity = "0.3"
         indice = 1
         buttonClass[indice].style.opacity = "1"
     }, 200)
@@ -66,7 +66,7 @@ function videoAssassino() {
     setTimeout(() => {
         videoClass.src =  "videos/videoAssassinos.mp4"
 
-        buttonClass[indice].style.opacity = "0.5"
+        buttonClass[indice].style.opacity = "0.3"
         indice = 2
         buttonClass[indice].style.opacity = "1"
     }, 200)
@@ -76,7 +76,7 @@ function videoAtirador() {
     setTimeout(() => {
         videoClass.src =  "videos/videoAtiradores.mp4"
 
-        buttonClass[indice].style.opacity = "0.5"
+        buttonClass[indice].style.opacity = "0.3"
         indice = 3
         buttonClass[indice].style.opacity = "1"
     }, 200)
@@ -86,7 +86,7 @@ function videoTanque() {
     setTimeout(() => {
         videoClass.src =  "videos/videoTank.mp4"
         
-        buttonClass[indice].style.opacity = "0.5"
+        buttonClass[indice].style.opacity = "0.3"
         indice = 4
         buttonClass[indice].style.opacity = "1"
     }, 200)

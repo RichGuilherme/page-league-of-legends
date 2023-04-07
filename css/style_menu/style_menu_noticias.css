@@ -1,17 +1,19 @@
 /* parte de noticias*/
-.container_noticia{
-    height: 60vh;
+#noticias{
     position: relative;
+
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
 .title_noticias p{
     font-size: 1.390em;
     letter-spacing: 2px;
+     word-break: none;
+
     margin-left: 22px;
+
     transform: rotate(270deg);
 }
 
