@@ -4,11 +4,87 @@
 #skins {
     position: relative;
 
-    margin: 0 auto;
-
-    height: 1850px;
+    height: 125vh;
+    min-height: 63rem;
+    max-height: 130vh;
 
     background-color: #d1f7ff;
+}
+
+.container-skin{
+    position: absolute;
+    bottom: 130px;
+    left: 0;
+    right: 0;
+
+
+    width: min(100%, 1050px);
+    height: 40vw;
+    
+    margin-inline: auto;
+
+    color: #fff;
+    z-index: 10;
+}
+
+.style-container-skin{
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    height: 100%;
+    width: 100%;
+}
+
+.border-animation{
+    position: absolute;
+    
+    margin: 7px 65px 0px 15px;
+
+    border: 2px solid ;
+
+    width: 25vw;
+    height: 25vw;
+    
+    transform: rotate(45deg);
+    
+    animation: animationBorderRotate 3s infinite ease; 
+    z-index: -1;
+}
+@keyframes animationBorderRotate {
+0%{
+    border-image: linear-gradient( rgb(255, 255, 255) , rgb(208, 168, 92) 100%, rgb(255, 255, 255));
+    border-image-slice: 1;
+
+}
+50%{
+    border-image: linear-gradient( rgb(255, 255, 255) -100%, rgb(208, 168, 92) 10%, rgb(255, 255, 255));
+    border-image-slice: 1;
+}
+100%{
+    border-image: linear-gradient( rgb(208, 168, 92), rgb(208, 168, 92), rgb(208, 168, 92));
+    border-image-slice: 1;
+
+}
+}
+
+.style-skins{
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 33px;
+}
+.style-skins img{
+   height: calc(32vw + 70px);
+}
+
+.skin-conteudo{
+    margin-left: 20px;
 }
 
 .paisagemPng{

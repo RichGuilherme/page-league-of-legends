@@ -12,7 +12,7 @@
     position: absolute;
     bottom: 0px;
     width: 100%;
-    height: 150px;
+    height: 200px;
     background: linear-gradient(to top, #d1f7ff,  transparent);
     z-index: 200;
 }
@@ -198,6 +198,7 @@
 /* Parte de video de das class dos campeos */
 .container-video-class{
     position: relative;
+    
     padding-top: 176px;
 }
 
@@ -217,11 +218,13 @@
 .linha-desing{
     position: absolute;
     
-    bottom: 25px;
+    bottom: 22px;
     height: 1px;
     width: 100%;
     
     background-color: rgb(117, 117, 117);
+
+    z-index: -1;
 }
 
 
@@ -266,9 +269,9 @@
     position: absolute;
     
     margin-left: 260px;
-    
-    z-index: 100;
-    
+
+    outline: 2px solid rgba(255, 255, 255, 0.616);
+    outline-offset: -10px;   
 }
 
 .video-Class video{

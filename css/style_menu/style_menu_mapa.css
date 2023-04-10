@@ -30,8 +30,8 @@
     color: #fff;
 }
 .map img {
-    width: 63vw;
-    height: 80vh;
+    width: 55vw;
+    height: 72vh;
 
     transform: translateY(0px);
     animation: flutuar 5s ease-in-out infinite;
