@@ -1,10 +1,10 @@
-@import 'style_menu/style_header.css';
-@import 'style_menu/style_menu_destaques.css';
-@import 'style_menu/style_menu_noticias.css';
-@import 'style_menu/style_menu_campeao.css';
-@import 'style_menu/style_menu_skin.css';
-@import 'style_menu/style_menu_mapa.css';
-@import 'style_menu/style_menu_footer.css';
+@import 'style_home/home_header.css';
+@import 'style_home/home_destaques.css';
+@import 'style_home/home_noticias.css';
+@import 'style_home/home_campeao.css';
+@import 'style_home/home_skin.css';
+@import 'style_home/home_mapa.css';
+@import 'style_home/home_footer.css';
 
 html{
     overflow-x: hidden;
