@@ -1,6 +1,6 @@
 const videoClass = document.querySelector("#videoClass")
-const buttonClass = document.querySelectorAll(".button-Class")
-const bntLogoClass = document.querySelectorAll(".bnt-logo-class")
+const buttonClass = document.querySelectorAll(".button_class")
+const bntLogoClass = document.querySelectorAll(".bnt_logo_class")
 
 
 const classes = ["Magos", "Lutadores", "Assassinos","Atiradores", "Tank"]

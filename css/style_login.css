@@ -50,7 +50,7 @@ h1{
     color: #fff;
 }
 .nick, .password_input{
-    font-size: 18px;
+    font-size:  1.125em;
     color: #fff;
     text-align: start;
     letter-spacing: 1px;
@@ -78,7 +78,7 @@ h1{
 }
 
 .login_submit {
-    font-size: 18px;
+    font-size:  1.125em;
     font-family: "FF Mark WO5", sans-serif;
     height: 60px;
     width: 200px;

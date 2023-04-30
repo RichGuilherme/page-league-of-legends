@@ -1,10 +1,8 @@
 /* parte de campeao */
 .container_campeoes{
     position: relative;
-
     width: 100%;
     height: 1715px;
-
     overflow: hidden;
 }
 .container_campeoes::before{ 
@@ -23,7 +21,7 @@
 }
 
 
-.title_campeao p{
+.title_campeao h1{
     font-size: 3.4375em;
     letter-spacing: 1px;
     font-family: "beaufortforlol", Arial, sans-serif;
@@ -50,17 +48,13 @@
     color: #d0a85c;
 }
 
-.flexbox-container-campeoes{
+.flexbox_container_campeoes{
     display: flex;
     align-items: center;
-
     height: 620px;
-
     margin-top: 90px;
     margin-left: 125px;
-
     gap: 0 35px;
-
     overflow-y: hidden;
 }
 .container_LogoImg{
@@ -69,13 +63,11 @@
     flex-direction: column;
 }
 
-.card-campeoes{
+.card_campeao{
     height: 460px;
     width: 270px;
-
     position: relative;
     margin-top: 21px;
-
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -84,27 +76,22 @@
 }
 .card_img {
     display: flex;
-
     background-position: -370px;
     background-size: cover;
     background-repeat: no-repeat;
-
     border: 2px solid ;
     border-image: linear-gradient(180deg, rgb(158, 126, 89), rgb(51, 37, 21));
     border-image-slice: 1;
     border-radius: 3px;
-    
     filter: grayscale(97%);
     -webkit-filter: grayscale(97%);
-
     height: 100%;
     width: 100%;
-    
     box-shadow: -2px 4px 15px inset black;
     transition: 0.5s all;
 }
 
-.card-campeoes .card_img:hover{
+.card_campeao .card_img:hover{
     filter: none;
     -webkit-filter: none;
     transform: scale3d(1.150, 1.100, 1);
@@ -140,9 +127,6 @@
     right: 200px;
     top: 20px;
     float: right;
-}
-
-.input_maisCampeoes a{
     padding: 9px 18px;
     background-color: #d0a85c;
     border: none;
@@ -150,17 +134,16 @@
     transition: linear 0.2s;
 }
 
-.input_maisCampeoes a:hover{
+.input_maisCampeoes:hover{
     background-color: #e0b667;
     outline: solid 0.1em #111;
     outline-offset: 0.4em;
 }
 
 /* botões avança e voltar imagens*/
-#button_back{
-    position: relative;
-    top: 60px;
-    margin-left: 6px;
+.bnt_back-avance{
+    position: absolute;
+    margin-top: 32px;
     height: 1.6em;
     width: 1.6em;
     border-right: 0.13em solid #111;
@@ -169,112 +152,82 @@
     cursor: pointer;
 }
 
-#button_back:hover{  
+.flexbox_container_campeoes:first-child{
+    transform: rotate(-135deg);
+}
+
+.bnt_back-avance:hover{  
     height: 1.6em;
     width: 1.6em;
     border-right: 0.2em solid rgb(170, 170, 170);
     border-bottom: 0.2em solid rgb(170, 170, 170);
 }
 
-#button_avanca{
-    position: relative;
-    top: 60px;
-    margin-right: 30px;
-    height: 1.6em;
-    width: 1.6em;
-    border-right: 0.13em solid #111;
-    border-bottom: 0.13em solid #111;
-    transform: rotate(310deg);
-    cursor: pointer;
-}
-
-#button_avanca:hover{  
-    height: 1.6em;
-    width: 1.6em;
-    border-right: 0.2em solid rgb(170, 170, 170);
-    border-bottom: 0.2em solid rgb(170, 170, 170);
-}
 
 /* Parte de video de das class dos campeos */
-.container-video-class{
+.container_videos_class{
     position: relative;
-    
     padding-top: 176px;
 }
 
-.container-class-Botao{
+.container_class_button{
     position: relative;
-    
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-
     margin-top: 100px;
     margin-right: 275px;
-
     z-index: 100;
 }
 
-.linha-desing{
-    position: absolute;
-    
+.linha_desing{
+    position: absolute;  
     bottom: 22px;
     height: 1px;
     width: 100%;
-    
     background-color: rgb(117, 117, 117);
-
     z-index: -1;
 }
 
 
-.button-Class svg{
+.button_class svg{
     height: 60px;
     width: 60px;
-    
     margin: 8px;
 }
 
 .class{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center; 
     letter-spacing: 2px;
 }
 .class p{
     opacity: 0.3;
 }
-.class .button-Class{
+.class .button_class{
     display: flex;
-    
     border: 2px solid;
     border-radius: 50%;
-    
     background-color:  transparent;
-    
     opacity: 0.3;
-    
     margin: 17px;
-
     cursor: pointer;
 }
 
-.class:first-child .button-Class,
+.class:first-child .button_class,
 .class:first-child p{
     opacity: 1;
 }
 
-.video-Class{
-    position: absolute;
-    
+.video_class{
+    position: absolute;  
     margin-left: 260px;
-
     outline: 2px solid rgba(255, 255, 255, 0.616);
     outline-offset: -10px;   
 }
 
-.video-Class video{
+.video_class video{
     width: 100%;
     border-radius: 30px;
 }
@@ -292,7 +245,7 @@
     html{
         display: block;
     }
-    .flexbox-container-campeoes {
+    .flexbox_container_campeoes {
         margin-left: 25px;
     }
     

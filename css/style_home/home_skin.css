@@ -3,54 +3,41 @@
 
 #skins {
     position: relative;
-
     height: 125vh;
     min-height: 63rem;
     max-height: 130vh;
-
     background-color: #d1f7ff;
 }
 
-.container-skin{
+.container_skin{
     position: absolute;
     bottom: 130px;
     left: 0;
     right: 0;
-
-
     width: min(100%, 1050px);
     height: 40vw;
-    
     margin-inline: auto;
-
     color: #fff;
     z-index: 10;
 }
 
-.style-container-skin{
+.style_container_skin{
     position: relative;
-
     display: flex;
     flex-direction: row;
-    align-items: center;
-    
+    align-items: center; 
     height: 100%;
     width: 100%;
 }
 
-.border-animation{
+.border_animation{
     position: absolute;
-    
     margin: 7px 65px 0px 15px;
-
     border: 2px solid ;
-
     width: 25vw;
-    height: 25vw;
-    
-    transform: rotate(45deg);
-    
-    animation: animationBorderRotate 3s infinite ease; 
+    height: 25vw;  
+    transform: rotate(45deg);  
+    animation: animationBorderRotate 3s infinite ease alternate; 
     z-index: -1;
 }
 @keyframes animationBorderRotate {
@@ -70,49 +57,41 @@
 }
 }
 
-.style-skins{
+.style_skins{
     position: relative;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin-left: 33px;
 }
-.style-skins img{
+.style_skins img{
    height: calc(32vw + 70px);
 }
 
-.skin-conteudo{
+.skin-contents{
     margin-left: 20px;
 }
 
 .paisagemPng{
     position: absolute;
     bottom: 0;
-
     width: 100%;
     height: calc(76.3889vw + 70px);
 }
 .paisagemPng img{
     position: absolute;
-
     width: 100%;
     height: 100%;
-
     object-fit: cover;
     object-position: 50% 0%;
 }
 .paisagemPng::after{
     content: "";
-
     position: absolute;
     left: 0;
     top: 65%;
-    
     width: 100%;
     height: 700px;
-
     background: black;
 }
 
