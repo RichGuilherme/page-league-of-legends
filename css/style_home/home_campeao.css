@@ -2,7 +2,8 @@
 .container_campeoes{
     position: relative;
     width: 100%;
-    height: 1715px;
+    min-height: 1715px;
+    max-height: 100%;
     overflow: hidden;
 }
 .container_campeoes::before{ 
@@ -51,11 +52,11 @@
 .flexbox_container_campeoes{
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 0 35px;
     height: 620px;
     margin-top: 90px;
-    margin-left: 125px;
-    gap: 0 35px;
-    overflow-y: hidden;
+    overflow: auto;
 }
 .container_LogoImg{
     display: flex;
@@ -88,6 +89,7 @@
     height: 100%;
     width: 100%;
     box-shadow: -2px 4px 15px inset black;
+    cursor: pointer;
     transition: 0.5s all;
 }
 
@@ -103,7 +105,7 @@
     width:  268px;
 }
 
-.card_img .descricao_campeao:hover{
+.descricao_campeao:hover{
     position: relative;
     display: flex;
     opacity: 1;
@@ -115,7 +117,7 @@
     font-size: 1.25em;
     color: #fff;
 }
-.card_img .descricao_campeao h1{
+.card_img .descricao_campeao h3{
     margin-bottom: 8px;
     font-weight: bold;
 }
@@ -141,6 +143,10 @@
 }
 
 /* botões avança e voltar imagens*/
+.alterarImagem{
+    position: relative;
+}
+
 .bnt_back-avance{
     position: absolute;
     margin-top: 32px;
@@ -152,9 +158,10 @@
     cursor: pointer;
 }
 
-.flexbox_container_campeoes:first-child{
-    transform: rotate(-135deg);
+.flexbox_container_campeoes .alterarImagem:last-of-type span{
+    transform: rotate(-46deg);
 }
+
 
 .bnt_back-avance:hover{  
     height: 1.6em;
@@ -166,8 +173,11 @@
 
 /* Parte de video de das class dos campeos */
 .container_videos_class{
+    width: 85%;
     position: relative;
     padding-top: 176px;
+    margin-bottom: 300px;
+    margin-inline: auto;
 }
 
 .container_class_button{
@@ -176,7 +186,6 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     margin-top: 100px;
-    margin-right: 275px;
     z-index: 100;
 }
 
@@ -222,45 +231,57 @@
 
 .video_class{
     position: absolute;  
-    margin-left: 260px;
     outline: 2px solid rgba(255, 255, 255, 0.616);
     outline-offset: -10px;   
 }
 
 .video_class video{
     width: 100%;
+    max-width: 640px;
     border-radius: 30px;
 }
 
 
 /* media query */
 
-@media (max-width: 1724px){
-    .input_maisCampeoes{
-        right: 10px;
+@media (max-width: 1736px){
+    .container_videos_class{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 50px;
+    }
+    .video_class{
+        position: relative;
+    }
+    .linha_desing{
+        display: none;
     }
 }
 
 @media (max-width : 1417px){
-    html{
-        display: block;
-    }
-    .flexbox_container_campeoes {
-        margin-left: 25px;
-    }
-    
     .text_item p {
         text-align: center;
     }
+   .text_item p {
+       font-size: 1.5875em;
+   }
+   .flexbox_container_campeoes{
+      justify-content: left;
+      padding-inline: 40px
+   }
+   .alterarImagem:first-of-type{
+      margin-left: 30px
+   }
 }
-.text_item p {
-    font-size: 1.5875em;
-}
-
-
-
-@media (max-width: 624px){
+@media (max-width: 676px){
     .text_item p {
         font-size: 1.3875em;
+    }
+    .container_videos_class{
+        display: none;
+    }
+    .container_campeoes{
+        min-height: 1335px;
     }
 }

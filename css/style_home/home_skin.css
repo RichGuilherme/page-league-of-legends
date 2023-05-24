@@ -30,32 +30,12 @@
     width: 100%;
 }
 
-.border_animation{
-    position: absolute;
-    margin: 7px 65px 0px 15px;
-    border: 2px solid ;
-    width: 25vw;
-    height: 25vw;  
-    transform: rotate(45deg);  
-    animation: animationBorderRotate 3s infinite ease alternate; 
-    z-index: -1;
+.skin-contents p:nth-child(2){
+    margin-bottom: 45px;
+    font-size: 1.329em;
+    text-align: center;
 }
-@keyframes animationBorderRotate {
-0%{
-    border-image: linear-gradient( rgb(255, 255, 255) , rgb(208, 168, 92) 100%, rgb(255, 255, 255));
-    border-image-slice: 1;
 
-}
-50%{
-    border-image: linear-gradient( rgb(255, 255, 255) -100%, rgb(208, 168, 92) 10%, rgb(255, 255, 255));
-    border-image-slice: 1;
-}
-100%{
-    border-image: linear-gradient( rgb(208, 168, 92), rgb(208, 168, 92), rgb(208, 168, 92));
-    border-image-slice: 1;
-
-}
-}
 
 .style_skins{
     position: relative;
@@ -63,6 +43,7 @@
     align-items: center;
     justify-content: center;
     margin-left: 33px;
+    min-width: 542px;
 }
 .style_skins img{
    height: calc(32vw + 70px);
@@ -94,7 +75,49 @@
     height: 700px;
     background: black;
 }
+.border_animation{
+    position: absolute;
+    margin: 7px 65px 0px 15px;
+    border: 2px solid ;
+    width: 25vw;
+    height: 25vw;  
+    transform: rotate(45deg);  
+    animation: animationBorderRotate 3s infinite ease alternate; 
+    z-index: -1;
+}
+@keyframes animationBorderRotate {
+0%{
+    border-image: linear-gradient( rgb(255, 255, 255) , rgb(208, 168, 92) 100%, rgb(255, 255, 255));
+    border-image-slice: 1;
+
+}
+50%{
+    border-image: linear-gradient( rgb(255, 255, 255) -100%, rgb(208, 168, 92) 10%, rgb(255, 255, 255));
+    border-image-slice: 1;
+}
+100%{
+    border-image: linear-gradient( rgb(208, 168, 92), rgb(208, 168, 92), rgb(208, 168, 92));
+    border-image-slice: 1;
+
+}
+}
 
 
 
 
+
+
+/* media query */
+
+@media (max-width: 1137px) {
+    .style_container_skin{
+        flex-direction: column;
+    }
+    .style_skins{
+        min-width: 0;
+    }
+    #skins{
+       height: 0; 
+       min-height: 31rem;
+    }
+}

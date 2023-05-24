@@ -27,7 +27,34 @@ html{
     z-index: -1;
 }
 
+h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5625em;
+    font-weight: bold;
+    font-family: "beaufortforlol", Arial, sans-serif;
+    color: #fff;
+}
 
+h2 > span {
+    font-size: 3.0625em;
+    font-weight: bold;
+    font-family: "beaufortforlol", Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 1137px){
+    h2 > span {
+        font-size: 2.0625em;
+    }
+}
 
 
 

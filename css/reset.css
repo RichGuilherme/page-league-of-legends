@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+body, html {
+    font-size: 16px;
+}
+
 @font-face {
     font-family: "beaufortforlol";
     src: url("../font/beaufortforlol-heavy.otf") format("OpenType");

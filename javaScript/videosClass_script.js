@@ -19,7 +19,7 @@ setInterval(()=> {
         indice = 0
     }
     
-
+    
     buttonClass[indice].style.opacity = "1"
     bntLogoClass[indice].style.opacity = "1"
 
@@ -30,7 +30,6 @@ setInterval(()=> {
 
         bntLogoClass[4].style.opacity = "1"
         bntLogoClass[indice-1].style.opacity = "0.3"
-
 
     }else if(indice ==! 4) {
         buttonClass[4].style.opacity = "0.3"

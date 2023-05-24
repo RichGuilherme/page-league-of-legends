@@ -1,18 +1,21 @@
 fetch("campeões.json")
 .then(response => {
-  response.json().then(dados => {
-      var campeoesJson = dados.arraysDeExibição
 
-      let index = 1
+  response.json()
+    .then(dados => {
+      const campeoesJson = dados.arraysDeExibição
+
+      let numeroExibicao = 1
       
       const getExebição = (exebicao) => {
       
         const getArray = campeoesJson[exebicao]
       
-        getArray.forEach((value, indexValue = 0) => {
-          const getCampeao =  value.campeao
-          const getDescricao = value.descricao   
-          const getClass = value.classe
+        getArray.forEach(({campeao, descricao, classe}, indexValue = 0) => {
+         
+          const getCampeao =  campeao
+          const getDescricao = descricao   
+          const getClass = classe
          
       
           const img =  document.querySelector(`#card_img${indexValue}`) 
@@ -26,15 +29,15 @@ fetch("campeões.json")
       }
 
       document.querySelector("#button_avanca").onclick = function () {
-        getExebição(index)
-        index++
+        getExebição(numeroExibicao)
+        numeroExibicao++
 
       
       }
       
       document.querySelector("#button_back").onclick = function () {
-         index === 1 ? index : index-- 
-         getExebição(index - 1) 
+         numeroExibicao === 1 ? numeroExibicao : numeroExibicao-- 
+         getExebição(numeroExibicao - 1) 
          
       }
     })
