@@ -7,11 +7,16 @@ fetch("campeões.json")
 
       let numeroExibicao = 1
       
-      const getExebição = (exebicao) => {
+      const getExebicao = (exebicao) => {
       
         const getArray = campeoesJson[exebicao]
+        
+        criaElementos(getArray)
+      }
       
-        getArray.forEach(({campeao, descricao, classe}, indexValue = 0) => {
+      const criaElementos = (array = []) => {
+
+        array.forEach(({campeao = "", descricao = "", classe = ""}, indexValue = 0) => {
          
           const getCampeao =  campeao
           const getDescricao = descricao   
@@ -29,20 +34,17 @@ fetch("campeões.json")
       }
 
       document.querySelector("#button_avanca").onclick = function () {
-        getExebição(numeroExibicao)
+        getExebicao(numeroExibicao)
         numeroExibicao++
-
-      
       }
       
       document.querySelector("#button_back").onclick = function () {
          numeroExibicao === 1 ? numeroExibicao : numeroExibicao-- 
-         getExebição(numeroExibicao - 1) 
+         getExebicao(numeroExibicao - 1) 
          
       }
     })
 })
-
 
 
 
