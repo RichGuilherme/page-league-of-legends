@@ -30,7 +30,7 @@
     width: 100%;
 }
 
-.skin-contents p:nth-child(2){
+.skin_conteudo p:nth-child(2){
     margin-bottom: 45px;
     font-size: 1.329em;
     text-align: center;
@@ -49,7 +49,7 @@
    height: calc(32vw + 70px);
 }
 
-.skin-contents{
+.skin_conteudo{
     margin-left: 20px;
 }
 

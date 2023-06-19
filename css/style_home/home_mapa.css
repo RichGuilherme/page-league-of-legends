@@ -8,13 +8,13 @@
     padding-bottom: 200px;
 }
 
-.img-map{
+.img_map{
     display: inline-flex;
     align-items: center;
     margin-top: 100px
 }
 
-.img-map p {
+.img_map p {
     display: inline;
     font-size:  1.390em;
     letter-spacing: 2px;
@@ -22,7 +22,7 @@
     transform: rotate(270deg);
     color: #fff;
 }
-.img-map img {
+.img_map img {
     width: 60%;
     transform: translateY(0px);
     animation: flutuar 5s ease-in-out infinite alternate;
@@ -64,7 +64,7 @@
 }
 
 
-.button-jogar2 button {
+.button_jogar2 button {
     height: 50px;
     width: 180px;
     padding: 4px 6px;
@@ -76,7 +76,7 @@
     transition: linear 0.2s;
 }
 
-.button-jogar2 button:hover {
+.button_jogar2 button:hover {
     outline: 1px solid rgba(255, 255, 255, 0.7);
     outline-offset: 0.4em;
     background-color: #0bc4e2;
@@ -93,21 +93,21 @@
         position: relative;
         margin: auto;
     }
-    .img-map img{
+    .img_map img{
         height: 100%;
         width: 100%;
     }
 }
 @media (max-width: 1560px){
 
-    .img-map{
+    .img_map{
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
 
     }
-    .img-map p {
+    .img_map p {
         transform: translateY(0px);
         font-size: 1.970em;
         margin-bottom: 35px;

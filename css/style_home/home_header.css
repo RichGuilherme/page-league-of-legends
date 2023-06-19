@@ -36,7 +36,7 @@ header{
    display: none;
    z-index: 1000;
 }
-.menu-section-background{
+.menu_section_background{
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -47,7 +47,7 @@ header{
     display: none;
 }
 
-.menu-section-topo{
+.menu_section_topo{
     display: flex;
     justify-content: space-between;
     margin-top: 6px;
@@ -58,7 +58,7 @@ header{
     font-size: 1.976em;
     color: #fff;
 }
-.container-bnt-closeToggle{
+.container_bnt_closeToggle{
     background-color: #737272;
     height: 32px;
     width: 33px;
@@ -68,20 +68,20 @@ header{
     cursor: pointer;
 }
 
-.menu-section-options{
+.menu_section_options{
     display: flex;
     flex-direction: column;
     margin-left: 20px;
     margin-top: 50px;
     
 }
-.menu-section-option {
+.menu_section_option {
     font-size:  1.3858em;
     margin-top: 30px;
     color: #fff;
     letter-spacing: 1px;
 }
-.menu-section-option:hover{
+.menu_section_option:hover{
     background-color: #4a4949;
     width: 97%;
     padding: 7px;
@@ -89,25 +89,25 @@ header{
 }
 
 
-.menu-section-options ul {
+.menu_section_options ul {
     margin-left: 9px;
     display: none;
 }
-.menu-section-options ul li{
+.menu_section_options ul li{
     margin-top: 10px;
 }
-.menu-section-options ul li:hover {
+.menu_section_options ul li:hover {
     background-color: #4a4949;
     width: 95%;
     padding: 7px 0 7px 0;
     border-radius: 8px;
 }
-.menu-section-options ul li a{
+.menu_section_options ul li a{
     color: #fff;
 }
 
 /*Parte de navegação*/
-.logo-cabecario{
+.logo_cabecario{
     padding: 12px 100px 8px 0px;
     display: inline;
 }
@@ -120,7 +120,7 @@ header{
     right: 27px;
 }
 
-.container-nav{
+.container_nav{
     display: inline-flex;
 }
 
@@ -214,7 +214,7 @@ nav ul li ul li a:hover{
 
 /*parte de sign-up e sign-in*/
 
-.container-formulario{
+.container_formulario{
     display: inline-flex;
     float: right;
     margin-right: 50px;
@@ -261,30 +261,30 @@ nav ul li ul li a:hover{
     nav ul {
       width: 0;
     }
-    .container-nav{
+    .container_nav{
       margin-right: 180px;
       margin-bottom: 0;
     }
 }
 @media (max-width : 1137px){
-  .container-formulario, .container-nav{
+  .container_formulario, .container_nav{
       display: none;
   }
   #bnt-hamburgueToggle{
       display: block;
   }
-  .material-symbols-outlined {
+  .material_symbols_outlined {
       color: #fff;
   }
 }
 
 
 @media (max-width: 580px){
-  .container-nav{
+  .container_nav{
       display: none;
   }
 
-  .container-formulario{
+  .container_formulario{
       display: none;
   }
 

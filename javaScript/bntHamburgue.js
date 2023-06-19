@@ -1,6 +1,6 @@
 // ativamento do botão hamburgue 
 const menuSection = document.querySelector('.menu-section')
-const menuSectionBackground = document.querySelector('.menu-section-background')
+const menuSectionBackground = document.querySelector('.menu_section_background')
 const hamburgueToggle = document.querySelector('#bnt-hamburgueToggle')
 const closeToggle = document.querySelector('#bnt-closeToggle')
 
@@ -15,9 +15,9 @@ closeToggle.addEventListener("click", () => {
      menuSectionBackground.style.display = "none"
 })
 
-const social = document.querySelector('#menu-section-option-social')
+const social = document.querySelector('#menu_section_option_social')
 const arrowDrop = document.querySelector('#arrow_drop_down')
-const subOption = document.querySelector('.menu-section-subOption')
+const subOption = document.querySelector('.menu_section_subOption')
 
 social.addEventListener("click", () =>{
    if(subOption.style.display != "block"){

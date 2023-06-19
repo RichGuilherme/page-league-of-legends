@@ -10,17 +10,17 @@
     margin: 0 auto;
 }
 
-#destaques img#logo-league{
+#destaques img#logo_league{
     height: 249px;
     width: 540px;
 }
 
-.button-jogar{
+.button_jogar{
     margin-top: 35px;
     margin-bottom: 75px;
 }
 
-#destaques button#button-jogar{
+#destaques button#button_jogar{
     width: 205px;
     height: 52px;
     border: none;
@@ -35,7 +35,7 @@
     font-family: "arialN";
     padding: 10px;
 }
-button#button-jogar.button::before {
+button#button_jogar.button::before {
     content: '';
     border-radius: 1000px;
     min-width: calc(205px + 10px);
@@ -53,7 +53,7 @@ button#button-jogar.button::before {
     transform: translateY(-6px);
   }
   
-button#button-jogar.button:hover::before, button#button-jogar.button:focus::before {
+button#button_jogar.button:hover::before, button#button_jogar.button:focus::before {
     opacity: 1;
  }
 
@@ -72,7 +72,7 @@ button#button-jogar.button:hover::before, button#button-jogar.button:focus::befo
 } 
 
 @media (max-width: 558px){
-    #destaques img#logo-league{
+    #destaques img#logo_league{
         height: 100%;
         width: 100%;
     }
